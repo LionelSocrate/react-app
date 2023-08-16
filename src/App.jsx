@@ -17,6 +17,19 @@ function App() {
   return (
     <>
       <div className="container">
+        <nav>
+          <div className="logo">
+            <p>Guitar</p>
+          </div>
+          <div className="lien">
+            <a href="#" className="home">
+              Home
+            </a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
         <div className="card">
           <div className="card1">
             <h1>Type of model</h1>
