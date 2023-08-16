@@ -1,15 +1,32 @@
-nav {
-  background: #222;
-  color: white;
-  height: 2rem;
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+.contenair nav{
+  width: 100%;
+  background-color: rgba(210, 105, 30, 0.123);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 }
-nav a {
-  margin-left: 2rem;
-  color: white;
+.contenair nav .logo p{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.contenair nav .lien a{
   text-decoration: none;
-  text-transform: capitalize;
+  margin: 0 1rem;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+.contenair nav .lien a :hover{
+  transition: .15s ease-in ;
+  color: rgba(0, 0, 0, 0.199);
 }

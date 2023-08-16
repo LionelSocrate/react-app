@@ -5,14 +5,16 @@ function App() {
     <>
       <div className="contenair">
         <nav>
-          <h1>F2SMI</h1>
-          <div className="links">
-
-          <a href="">home</a>
-          <a href="">contact</a>
+          <div className="logo">
+           <p>Guitar</p>
+          </div>
+          <div className="lien">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contacte</a>
           </div>
         </nav>
-        <input type="text" />
       </div>
     </>
   );
