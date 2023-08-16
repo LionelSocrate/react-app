@@ -1,23 +1,17 @@
-*,*::after,*::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-}
-.contenair nav{
-  width: 100%;
+nav {
   background-color: rgba(210, 105, 30, 0.123);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
+  max-height: 60px;
+  overflow: hidden;
 }
-.contenair nav .logo p{
+nav .logo p {
   font-size: 2rem;
   font-weight: bolder;
 }
-.contenair nav .lien a{
+nav .lien a {
   text-decoration: none;
   margin: 0 1rem;
   color: black;
@@ -25,9 +19,238 @@
   font-weight: 600;
   cursor: pointer;
   border-bottom: 1px solid black;
-  transition: all .15s ease-in ;
+  transition: all 0.15s ease-in;
 }
-.contenair nav .lien a:hover{
+nav .lien a:hover {
   color: rgba(255, 255, 255, 0.5);
-  border-color:  rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card1 {
+  width: 22%;
+  height: 400px;
+  position: relative;
+  margin: 1rem;
+  max-width: 400px;
+  min-width: 350px;
+  display: flex;
+  padding: 1.5rem 0;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(128, 0, 255);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(128, 0, 255);
+  overflow: hidden;
+}
+
+.card1 h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+  -webkit-text-stroke: 1px rgb(247, 50, 225);
+  -webkit-text-fill-color: transparent;
+}
+
+.sary1 {
+  width: 75%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.sary1 img {
+  width: 100%;
+  padding-left: 43px;
+  padding-top: 10px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  width: 75%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  background: linear-gradient(to bottom, rgb(184, 42, 184) 10%, blue);
+}
+
+.btn button:hover {
+  background: linear-gradient(to top, blue 20%, rgb(184, 42, 184));
+}
+
+.slides-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides-container > img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.slides-container > img:first-of-type {
+  transform: rotateY(180deg);
+}
+
+.slides {
+  width: 350px;
+  height: 250px;
+  background: var(--color-white);
+  max-width: 350px;
+  max-height: 250px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.slides-container .img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  animation: translate 12s linear infinite;
+}
+
+@keyframes translate {
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+
+  16%,
+  25% {
+    transform: translateX(-350px);
+  }
+
+  26%,
+  36% {
+    transform: translateX(-700px);
+  }
+
+  37%,
+  50% {
+    transform: translateX(-700px);
+  }
+
+  51%,
+  61% {
+    transform: translateX(-1050px);
+  }
+
+  62%,
+  75% {
+    transform: translateX(-1050px);
+  }
+
+  76%,
+  86% {
+    transform: translateX(-1400px);
+  }
+
+  87%,
+  100% {
+    transform: translateX(-1400px);
+  }
+}
+
+.slides-container .img > div {
+  overflow: hidden;
+  min-width: 350px;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img > div img {
+  height: 100%;
+  object-fit: contain;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: rgb(236, 226, 170);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.titre_footer h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(189, 186, 15);
+}
+
+.groupe_footer h2 {
+  background-color: rgb(212, 107, 8);
+  border-radius: 15px;
+  padding: 0 4px;
+  box-shadow: 1px 2px 1px 1px rgba(228, 136, 50, 0.308);
+}
+
+.element_footer {
+  width: 100%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.element {
+  align-items: center;
+  flex-direction: column;
+}
+
+.element h2 {
+  font-size: 20px;
+  color: rgb(189, 186, 15);
+  text-transform: lowercase;
+}
+
+.navigateur img {
+  width: 40%;
+  padding: auto;
+}
+
+marquee {
+  font-size: 2rem;
+  color: rgb(212, 107, 8);
+}
+
+li a,
+.chanteurs_legende div {
+  text-decoration: none;
+  color: rgb(184, 194, 142);
 }
