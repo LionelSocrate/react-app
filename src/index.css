@@ -1,36 +1,17 @@
-*,*::after,*::before{
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-}
-.card1{
+    :root {
+        --color-white: #fff;
+    }
 
-    width: 60%;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border:  1px solid red;
-}
-.card2 {
-    margin-bottom: 20px;
-    width: 60%;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid red;
-}
-.card3{
-    width: 60%;
-    height: 300px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid red;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color: var(--color-white);
+        background: #222;
+        font-family: Cambria, Cochin, Georgia,
+            Times, 'Times New Roman', serif;
+        list-style: none;
+        outline: none;
+        border: none;
+    }

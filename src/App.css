@@ -1,0 +1,101 @@
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .card1 {
+        width: 50%;
+        height: 350px;
+        position: relative;
+        margin: 1rem;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(128, 0, 255);
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0 0 8px rgb(128, 0, 255);
+        overflow: hidden;
+    }
+
+    .card1::before {
+        content: '';
+        position: absolute;
+        top: -75px;
+        left: -80px;
+        width: 140px;
+        height: 140px;
+        border-radius: 25%;
+        background-color: transparent;
+        border: 5px dashed rgb(216, 117, 216);
+    }
+
+    .card1::after {
+        content: '';
+        position: absolute;
+        top: -80px;
+        right: -70px;
+        width: 140px;
+        height: 140px;
+        border-radius: 25%;
+        background-color: transparent;
+        border: 5px dashed rgb(216, 117, 216);
+    }
+
+    .card1 h1 {
+        color: var(--color-white);
+        font-size: 1.5rem;
+        font-weight: 900;
+        -webkit-text-stroke: 1px white;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+
+    .sary1 {
+        width: 60%;
+        height: 70%;
+        background-color: blue;
+    }
+
+    .sary1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 60%;
+        height: 100%;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        color: white;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: all .5s ease;
+        background: linear-gradient(to bottom, rgb(184, 42, 184) 10%, blue);
+    }
+
+
+    .btn button:hover {
+        background: linear-gradient(to top, blue 20%, rgb(184, 42, 184));
+    }
