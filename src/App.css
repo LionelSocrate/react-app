@@ -24,9 +24,12 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  border-bottom: 1px solid black;
+}
+.contenair nav .lien a{
+ border-bottom: 1px solid black;
 }
 .contenair nav .lien a :hover{
   transition: 1.5s ease-in ;
-  color: rgba(0, 0, 0, 0.199);
+  color: rgba(0, 0, 0, 0.219);
+  border-radius: 50px;
 }

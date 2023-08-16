@@ -9,7 +9,7 @@ function App() {
            <p>Guitar</p>
           </div>
           <div className="lien">
-            <a href="#">Home</a>
+            <a href="#" className="home">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contacte</a>
