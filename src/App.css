@@ -75,3 +75,52 @@
   height: 100%;
   object-fit: contain;
 }
+footer{
+  width: 100%;
+  background-color:black;
+  color: rgb(236, 226, 170);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.titre_footer h2{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(189, 186, 15);
+}
+.groupe_footer h2{
+  background-color:  rgb(212, 107, 8);
+  border-radius: 15px;
+  padding: 0 4px;
+  box-shadow: 1px 2px 1px 1px  rgba(228, 136, 50, 0.308);
+}
+.element_footer{
+  width: 100%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.element{
+  align-items: center;
+  flex-direction: column;
+}
+.element h2{
+  font-size: 20px;
+  color:  rgb(189, 186, 15);
+  text-transform: lowercase;
+}
+.navigateur img{
+  width: 40%;
+  padding: auto;
+}
+marquee{
+  font-size: 2rem;
+  color:  rgb(212, 107, 8);
+}
+li a , .chanteurs_legende div{
+  text-decoration: none;
+  color: rgb(184, 194, 142);
+}
