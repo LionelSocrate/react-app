@@ -12,7 +12,7 @@ function App() {
             <a href="#" className="home">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
-            <a href="#">Contacte</a>
+            <a href="#">Contact</a>
           </div>
         </nav>
       </div>
