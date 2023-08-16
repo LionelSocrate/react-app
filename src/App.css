@@ -27,6 +27,6 @@
   border-bottom: 1px solid black;
 }
 .contenair nav .lien a :hover{
-  transition: .15s ease-in ;
+  transition: 1.5s ease-in ;
   color: rgba(0, 0, 0, 0.199);
 }
