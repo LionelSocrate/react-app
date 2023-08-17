@@ -1,20 +1,14 @@
 import "./App.css";
-import NavImg1 from "./assets/imagenav-removebg-preview.png"
+import NavImg1 from "./assets/imagenav-removebg-preview.png";
 import Guitare1 from "./assets/guitare1.webp";
 import Guitare2 from "./assets/guitare2.webp";
 import Guitare3 from "./assets/guitare3.jpg";
 import Guitare4 from "./assets/guitare4.jpg";
 import Fleche from "./assets/fleche.png";
-
+import Electro from "./assets/electronic5.jpg"
 function App() {
-  let img = document.getElementById('img');
-  console.log(img);
-  const slideLeft = ()=>{
-    img.style.transform= 'translateX(-350px)';
-  }
   return (
     <>
-      <div className="container">
       <div className="container">
         <nav>
           <div className="logo">
