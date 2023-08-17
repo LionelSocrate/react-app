@@ -14,7 +14,50 @@ function App() {
   }
   return (
     <>
-      <div className="contenair">
+      <div className="container">
+      <div className="container">
+        <nav>
+          <div className="logo">
+            <p>Guitar</p>
+          </div>
+          <div className="lien">
+            <a href="#" className="home">
+              Home
+            </a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+        <div className="card">
+          <div className="card1">
+            <h1>Type of model</h1>
+            <div className="sary1">
+              <img src={Electro} alt="" />
+            </div>
+            <div className="btn">
+              <button>Buy</button>
+            </div>
+          </div>
+          <div className="card1">
+            <h1>Type of model</h1>
+            <div className="sary1">
+              <img src={Electro} alt="" />
+            </div>
+            <div className="btn">
+              <button>Buy</button>
+            </div>
+          </div>
+          <div className="card1">
+            <h1>Type of model</h1>
+            <div className="sary1">
+              <img src={Electro} alt="" />
+            </div>
+            <div className="btn">
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
         <div className="slides-container">
           <img src={Fleche} onClick={() => slideLeft()} alt="" />
           <div className="slides">
