@@ -117,7 +117,7 @@ function App() {
             </div>
           </div>
 
-          <marquee behavior="schrool" direction="left">
+          <marquee  direction="left">
             Merci pour visiter cette site
           </marquee>
         </footer>

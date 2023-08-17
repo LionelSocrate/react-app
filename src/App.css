@@ -51,6 +51,7 @@ nav .lien a:hover {
   border-radius: 5px;
   box-shadow: 0 0 8px rgb(128, 0, 255);
   overflow: hidden;
+  min-width: 350px;
 }
 
 .card1 h1 {
@@ -66,9 +67,10 @@ nav .lien a:hover {
 }
 
 .sary1 {
-  width: 75%;
-  height: 70%;
-  margin-bottom: 10px;
+      width: 75%;
+    min-width: 40%;
+    height: 70%;
+    margin-bottom: 10px;
 }
 
 .sary1 img {
