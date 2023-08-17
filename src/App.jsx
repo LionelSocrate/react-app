@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Electro from "./assets/electronic5.jpg";
 import Guitare1 from "./assets/guitare1.webp";
