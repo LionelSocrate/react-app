@@ -1,13 +1,15 @@
 nav {
-  background-color: rgba(210, 105, 30, 0.123);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
   max-height: 60px;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+  z-index: 10;
+  background-color: rgb(155, 149, 145);
 }
 nav .logo p {
   font-size: 2rem;
@@ -16,7 +18,7 @@ nav .logo p {
 nav .lien a {
   text-decoration: none;
   margin: 0 1rem;
-  color: black;
+  color: auto;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -32,8 +34,8 @@ nav .lien a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 6rem;
 }
-
 .card1 {
   width: 22%;
   height: 400px;
